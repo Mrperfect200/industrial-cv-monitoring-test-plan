@@ -1,5 +1,8 @@
 # Industrial Computer Vision Monitoring System — Test Plan
 
+[GitHub Repository](https://github.com/Mrperfect200/industrial-cv-monitoring-test-plan)
+
+
 > QA documentation for an Industrial Computer Vision platform monitoring up to 80 factory cameras 24/7.
 
 ## Repository Structure
