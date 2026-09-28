@@ -3,7 +3,7 @@
 > QA documentation for an Industrial Computer Vision platform monitoring up to 80 factory cameras 24/7.
 
 ## Repository Structure
-
+|
 ```
 ├── docs/
 │   └── requirements/          # SRS and supporting requirements docs
@@ -16,6 +16,14 @@
 │   ├── 05-performance-load/   # Scale 1→80 cameras, stress, concurrent events
 │   ├── 06-reliability-failover/ # Camera/service/DB/power failure recovery
 │   └── 07-soak/               # 8h / 24h / 72h stability testing
+├── TEST_CASES/                # Corporate formatted test case files (one per TC ID)
+│   ├── TS1-Functional/        # ICVMS-08.md … ICVMS-47.md
+│   ├── TS2-Computer-Vision-AI/ # ICVMS-48.md … ICVMS-70.md
+│   ├── TS3-API/               # ICVMS-71.md … ICVMS-90.md
+│   ├── TS4-Security/          # ICVMS-91.md … ICVMS-110.md
+│   ├── TS5-Performance-Load/  # ICVMS-111.md … ICVMS-125.md
+│   ├── TS6-Reliability-Failover/ # ICVMS-126.md … ICVMS-137.md
+│   └── TS7-Soak/              # ICVMS-138.md … ICVMS-142.md
 ├── rtm/                       # Requirements Traceability Matrix
 ├── acceptance-criteria/       # Production Readiness Checklist
 ├── defect-management/         # Defect report template + severity guide
@@ -23,7 +31,6 @@
 └── reports/
     └── templates/             # Test execution report templates
 ```
-
 ## Test Strategy — 5 Layers
 
 | Layer | Focus | Mandatory |
