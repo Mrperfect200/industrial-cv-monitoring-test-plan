@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-88 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-88 | TC-API-040 \| API versioning /api/v1 prefix active on all endpoints | System running. API deployed. | Action: GET /api/v1/camerasExpected: HTTP 200. URL prefix is /api/v1/.Action: GET /api/cameras (without version)Expected: HTTP 404 or redirect to versioned URL.Action: Check all endpoints use /api/v1/ prefixTest Data: Inspect API documentationExpected: All endpoints versioned correctly. | All endpoints accessible only under /api/v1/. Unversioned paths return 404. | High | To Do |

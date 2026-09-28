@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-21 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-21 | TC-VID-003 \| Processing FPS = 25 configurable | Camera streaming at 25 FPS. System running. | Action: Set processing_fps = 25Test Data: {"processing_fps": 25}Expected: Configuration accepted.Action: Monitor frame processing rate for 30 secondsExpected: ~25 frames processed per second (±2). | System processes ~25 FPS matching camera output. | High | To Do |

@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-46 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-46 | TC-MON-001 \| GPU utilization reported in monitoring | System running. Inference active. | Action: Check monitoring endpoint or dashboardTest Data: GET /api/v1/monitoring/gpuExpected: Response contains gpu_utilization_percent.Action: Run inference on 10 camerasExpected: GPU utilization % increases and is reported. | GPU utilization reported in real time via monitoring endpoint. | High | To Do |

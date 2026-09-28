@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-79 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-79 | TC-API-016 \| POST /cameras — Viewer gets 403 Forbidden | Viewer account available. System running. | Action: Login as Viewer. Get JWT token.Expected: Token received.Action: POST /api/v1/cameras with valid payload using Viewer tokenExpected: HTTP 403 Forbidden.Action: Check response bodyExpected: Error indicates insufficient permissions.Action: Verify no camera was createdTest Data: GET /api/v1/camerasExpected: New camera not in list. | Viewer cannot create cameras. HTTP 403. No side effects. | Highest | To Do |

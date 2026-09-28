@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-66 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-66 | TC-ROI-001 \| Detection only within configured ROI | ROI configured on CAM-001. Object detection active. | Action: Place object outside configured ROI boundaryTest Data: Use test video with object outside ROIExpected: Object visible in frame.Action: Check detection outputExpected: Zero detections for object outside ROI.Action: Place object inside ROIExpected: Detection fires correctly. | Objects outside ROI produce zero detections. Objects inside ROI detected correctly. | High | To Do |

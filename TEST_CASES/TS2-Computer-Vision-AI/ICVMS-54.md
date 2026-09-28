@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-54 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-54 | TC-DET-008 \| Person detection — motion blur | Test dataset with motion blur (fast-moving persons) available. | Action: Run inference on motion-blurred framesTest Data: Person moving fast, blurred frameExpected: System attempts detection.Action: Calculate RecallExpected: Meets project target for motion blur.Action: Inspect false negativesExpected: Identify blur threshold causing failures. | Recall meets project target under motion blur. Failure threshold documented. | High | To Do |

@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-91 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-91 | TC-SEC-001 \| Passwords stored as hash — no plaintext in DB | Database access available. Admin user exists. | Action: Query users table in database directlyTest Data: SELECT password FROM users LIMIT 5;Expected: Password column contains hashed values only.Action: Verify hash formatExpected: Values start with bcrypt/argon2/scrypt prefix. Not plaintext.Action: Attempt to find any plaintext password in DBTest Data: SELECT * FROM users WHERE LENGTH(password) < 20;Expected: Zero results. | All passwords stored as hashes. No plaintext passwords in database. | Highest | To Do |

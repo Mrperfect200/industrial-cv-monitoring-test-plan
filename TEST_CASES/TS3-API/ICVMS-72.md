@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-72 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-72 | TC-API-002 \| POST /auth/login — wrong password returns 401 | System running. User account exists. | Action: POST /api/v1/auth/login with correct email but wrong passwordTest Data: {"email":"admin@factory.com","password":"WrongPass"}Expected: HTTP 401 Unauthorized.Action: Check response bodyExpected: Error message does not reveal whether email exists.Action: Attempt 5 more times with wrong passwordExpected: Rate limiting or lockout applied after threshold. | HTTP 401 on wrong password. No user enumeration. Rate limiting active. | Highest | To Do |

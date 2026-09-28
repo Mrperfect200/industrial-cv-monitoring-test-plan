@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-37 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-37 | TC-EVT-003 \| Event persisted to database | System running. Database connected. | Action: Trigger a ZONE_ENTER eventExpected: Event generated.Action: Query database directly for the eventTest Data: SELECT * FROM events WHERE event_id = '...'Expected: Record exists in DB with correct fields. | Every generated event is persisted to the database. | High | To Do |

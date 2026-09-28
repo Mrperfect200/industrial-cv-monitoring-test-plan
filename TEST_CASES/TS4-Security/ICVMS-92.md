@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-92 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-92 | TC-SEC-002 \| JWT signed with strong algorithm RS256/HS256 | System running. Valid credentials available. | Action: Login and receive JWT tokenExpected: Token received.Action: Decode JWT header using base64Test Data: echo '<header>' \| base64 -dExpected: alg = RS256 or HS256.Action: Verify token contains exp claimExpected: exp claim present with future timestamp.Action: Verify token contains iat and sub claimsExpected: Both present. | JWT uses strong algorithm. Contains required claims (exp, iat, sub). | Highest | To Do |

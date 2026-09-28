@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-59 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-59 | TC-DET-017 \| Per-class threshold configurable without code change | Model deployed. Config file accessible. | Action: Set helmet threshold = 0.65 in config fileExpected: Config updated.Action: Restart inference serviceExpected: Service restarts with new config.Action: Run inference — verify helmet detections below 0.65 absentExpected: Zero helmet detections below 0.65.Action: Change threshold to 0.80 without code changeTest Data: Edit config onlyExpected: New threshold applied on restart. | Per-class threshold fully configurable via config file. No code change required. | High | To Do |

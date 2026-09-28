@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-57 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-57 | TC-DET-015 \| Detection includes all required output fields | Model deployed. Inference running. | Action: Run inference on test frameExpected: Detections returned.Action: Inspect each detection object schemaExpected: class, confidence, bbox, camera_id, timestamp all present.Action: Verify no required field is null or missingExpected: All fields populated for every detection. | Every detection contains all required fields. No missing or null values. | Highest | To Do |

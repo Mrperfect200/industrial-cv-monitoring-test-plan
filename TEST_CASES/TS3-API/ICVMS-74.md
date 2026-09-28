@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-74 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-74 | TC-API-008 \| Any endpoint — no token returns 401 | System running. | Action: Send request to GET /api/v1/cameras with no Authorization headerExpected: HTTP 401 Unauthorized.Action: Send request with Authorization header emptyTest Data: Authorization: Bearer Expected: HTTP 401.Action: Verify response bodyExpected: Error: missing or invalid token. | HTTP 401 on all requests without valid token. | Highest | To Do |

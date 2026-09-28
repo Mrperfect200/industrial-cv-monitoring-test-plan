@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-26 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-26 | TC-LINE-003 \| Entry direction detected correctly | Virtual line configured horizontally. Object approaches from top. | Action: Play video of person moving top-to-bottom crossing lineExpected: Object crosses line.Action: Check LINE_CROSSED event direction fieldExpected: direction = ENTRY. | Direction = ENTRY when object crosses in configured entry direction. | High | To Do |

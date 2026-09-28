@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-55 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-55 | TC-DET-009 \| False positive rate — empty scene | Test dataset of empty scenes (no people present) available. | Action: Run inference on 200 empty scene framesTest Data: No people in any frameExpected: Ideally zero detections.Action: Count false positivesExpected: FP count / total frames = FP rate.Action: Verify FP rate meets project thresholdExpected: FP rate <= project-defined threshold. | False positive rate on empty scenes meets project-defined threshold. | High | To Do |

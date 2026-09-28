@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-52 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-52 | TC-DET-006 \| Person detection — high density crowd | High-density crowd test dataset (10+ people per frame) available. | Action: Run inference on crowd scenesTest Data: 10-15 people in single frameExpected: All persons detected.Action: Calculate Precision and RecallExpected: Meet targets for high-density scenes.Action: Check for duplicate detections on same personExpected: No duplicate bounding boxes on single person. | Detection meets targets in high-density crowd scenes. No duplicate detections. | High | To Do |

@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-95 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-95 | TC-SEC-005 \| Brute force protection — lockout after failed attempts | System running. Login endpoint available. | Action: Send 10 failed login attempts with wrong passwordTest Data: {"email":"admin@factory.com","password":"wrong"}Expected: First attempts return 401.Action: Send 20th failed attemptExpected: HTTP 429 or HTTP 401 with lockout message.Action: Wait for lockout period / unlock accountExpected: After lockout period, login succeeds with correct credentials. | Brute force protection active. Account locked or rate limited after repeated failures. | High | To Do |

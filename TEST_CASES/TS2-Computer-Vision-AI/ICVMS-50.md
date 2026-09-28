@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-50 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-50 | TC-DET-003 \| Person detection — strong backlight | Test dataset with backlit scenes available. Model deployed. | Action: Run inference on backlit imagesTest Data: Window behind subject, strong backlightExpected: Detections generated.Action: Calculate Precision and RecallExpected: Meet project-defined targets.Action: Inspect false negatives visuallyExpected: Identify failure patterns for improvement. | Detection meets targets under backlight. False negatives documented. | High | To Do |

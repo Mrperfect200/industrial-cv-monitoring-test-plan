@@ -2,4 +2,4 @@
 
 | TC ID | Description | Preconditions | Test Steps | Expected Result | Priority | Status |
 |-------|-------------|----------------|------------|-----------------|----------|--------|
-| ICVMS-19 | <Description to be filled from Jira> | <Preconditions to be filled> | 1. <Step description>\n   - **Test Data:** <input>\n   - **Expected:** <expected for this step>\n2. <Next step> | <Expected result to be filled> | High | To Do |
+| ICVMS-19 | TC-RTSP-010 \| RTSP credentials not logged | Camera configured with RTSP credentials. System running. | Action: Connect camera with RTSP username and passwordExpected: Stream connects successfully.Action: Search all log files for the RTSP password stringTest Data: grep -r "rtsp_password_value" /var/log/Expected: Zero matches found.Action: Search logs for username stringExpected: Zero matches found. | RTSP credentials (username and password) absent from all log files. | Highest | To Do |
